@@ -1,0 +1,32 @@
+.condensacao:hover {
+    transform: scale(1.10);
+ }
+
+.condensacao {
+    background-image: url('2.png');
+  }
+ 
+.condensacao:hover {
+    background-image: url('2b.png');
+ }
+
+
+.evaporacao:hover {
+    transform: scale(1.10);
+    /* 3b */
+}
+
+.transpiracao:hover {
+    transform: scale(1.10);
+    /* 4b */
+}
+
+.preciptacao:hover {
+    transform: scale(1.10);
+    /* 5b */
+}
+
+.infiltracao:hover {
+    transform: scale(1.10);
+    /* 8b */
+}
