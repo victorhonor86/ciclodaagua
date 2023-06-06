@@ -30,3 +30,19 @@
     transform: scale(1.10);
     /* 8b */
 }
+
+.box {
+    clear: both;
+    top: 200px;
+    right: 200px;
+    margin: 20px 20px 20px 10px;
+    padding: 0px 20px 20px 20px;
+    float: left;
+    color: rgba(255, 255, 255, 0.815);
+    width: 440px;
+    height: 300px;
+    background: #21445B;
+    position: absolute;
+    box-shadow: 0 0 0 10px hsl(202, 87%, 37%), 0 0 0 15px hsl(202, 87%, 60%), 0 0 0 20px hsl(202, 87%, 70%), 0 0 0 25px hsl(202, 87%, 80%), 0 0 0 30px hsl(202, 87%, 90%);
+    border-radius: 20px;
+}
