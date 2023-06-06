@@ -15,27 +15,27 @@
     $("#evaporacao").click(function(){
       $("#titulo").html("<h1>Evaporação</h1><br>");
       $("#local").html("<h2>Água do Rio ⇨ Vapor de Água</h2><br>");
-      $("#descricao").html("<h3>A água do rio com o calor evapora <br>e se transforma em vapor de água.</h3>");
+      $("#descricao").html("<h3>A água do rio com o calor evapora e se transforma em vapor de água.</h3>");
     });
     $("#preciptacao").click(function(){
       $("#titulo").html("<h1>Preciptação</h1><br>");
       $("#local").html("<h2>Nuvem ⇨ Chuva</h2><br>");
-      $("#descricao").html("<h3>A nuvem começa a precipitar,<br> isto é chover.</h3>");
+      $("#descricao").html("<h3>A nuvem começa a precipitar, isto é chover.</h3>");
     });
     $("#transpiracao").click(function(){
       $("#titulo").html("<h1>Transpiração</h1><br>");
       $("#local").html("<h2>Árvore ⇨ Vapor de Água</h2><br>");
-      $("#descricao").html("<h3>Um tipo especial de evaporação<br> é a transpiração da árvore, <br>que transforma a água<br> acumulada em vapor de água.</h3>");
+      $("#descricao").html("<h3>Um tipo especial de evaporação é a transpiração da árvore, que transforma a água acumulada em vapor de água.</h3>");
     });
     $("#condensacao").click(function(){
       $("#titulo").html("<h1>Condensação</h1><br>");
       $("#local").html("<h2>Vapor de Água ⇨ Nuvem</h2><br>");
-      $("#descricao").html("<h3>O vapor de água com a temperatura baixa<br> do céu se condensa em forma de nuvens.</h3>");
+      $("#descricao").html("<h3>O vapor de água com a temperatura baixa do céu se condensa em forma de nuvens.</h3>");
     });
     $("#infiltracao").click(function(){
       $("#titulo").html("<h1>Infiltração</h1><br>");
       $("#local").html("<h2>Chuva ⇨ Lençol Freático</h2><br>");
-      $("#descricao").html("<h3>A água da chuva penetra no solo e<br> fica armazenada no lençol freático.</h3>");
+      $("#descricao").html("<h3>A água da chuva penetra no solo e fica armazenada no lençol freático.</h3>");
     });
 
 
@@ -43,11 +43,10 @@
   </script>
 </head>
 <body>
-    <button type="button" class="btn btn-primary"><h1>Ciclo da Água:</h1></button>
-    <br>Clique nas etapas do ciclo para mais informações
+  <div class="d-flex justify-content-center"><button type="button" class="btn btn-primary text-center"><h1>Ciclo da Água:</h1></button></div>
           <div class="conteiner">
             <div class="row">
-              <div class="col-1"></div>
+              <div class="col-2"></div>
               <div class="col-6">
           <div class="d-flex row bd-highlight mb-0">
             <div class="p-0 bd-highlight"><img src="1.png" alt="1" ></div>
@@ -65,13 +64,13 @@
             <div class="p-0 bd-highlight"><img src="9.png" alt="3" ></div>
           </div>
         </div>
-        <div class="col-5"><div id="titulo"><h1>Fenômeno</h1></div>
-        <div id="local"><h2>Local onde ocorre</h2></div>
-                  <div id="descricao"><h3>Descrição do Fenômeno</h3>
+        <div id="box" class="col-4 box"><div id="titulo"><h1>Clique nas Setas</h1></div>
+        <div id="local"><h2>para obter a</h2></div>
+                  <div id="descricao"><h3> descrição</h3>
                   </div>
       </div>   
-        </div>
-     referência da imagem:
-     https://www.aguasustentavel.org.br/conteudo/blog/191-ciclo-da-agua-o-que-e-e-como-ocorre
+        </div><br><br><br>
+     referência da imagem: <br>
+     <a href="https://www.aguasustentavel.org.br/conteudo/blog/191-ciclo-da-agua-o-que-e-e-como-ocorre" target="_blank">Ciclo da água o que é e como ocorre</a>
     </body>
 </html>
