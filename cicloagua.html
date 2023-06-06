@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+<link rel="stylesheet" href="style.css">
+<title>Ciclo da Água</title>
+<script>
+  $(document).ready(function(){
+    $("#evaporacao").click(function(){
+      $("#titulo").html("<h1>Evaporação</h1><br>");
+      $("#local").html("<h2>Água do Rio ⇨ Vapor de Água</h2><br>");
+      $("#descricao").html("<h3>A água do rio com o calor evapora <br>e se transforma em vapor de água.</h3>");
+    });
+    $("#preciptacao").click(function(){
+      $("#titulo").html("<h1>Preciptação</h1><br>");
+      $("#local").html("<h2>Nuvem ⇨ Chuva</h2><br>");
+      $("#descricao").html("<h3>A nuvem começa a precipitar,<br> isto é chover.</h3>");
+    });
+    $("#transpiracao").click(function(){
+      $("#titulo").html("<h1>Transpiração</h1><br>");
+      $("#local").html("<h2>Árvore ⇨ Vapor de Água</h2><br>");
+      $("#descricao").html("<h3>Um tipo especial de evaporação<br> é a transpiração da árvore, <br>que transforma a água<br> acumulada em vapor de água.</h3>");
+    });
+    $("#condensacao").click(function(){
+      $("#titulo").html("<h1>Condensação</h1><br>");
+      $("#local").html("<h2>Vapor de Água ⇨ Nuvem</h2><br>");
+      $("#descricao").html("<h3>O vapor de água com a temperatura baixa<br> do céu se condensa em forma de nuvens.</h3>");
+    });
+    $("#infiltracao").click(function(){
+      $("#titulo").html("<h1>Infiltração</h1><br>");
+      $("#local").html("<h2>Chuva ⇨ Lençol Freático</h2><br>");
+      $("#descricao").html("<h3>A água da chuva penetra no solo e<br> fica armazenada no lençol freático.</h3>");
+    });
+
+
+  });
+  </script>
+</head>
+<body>
+    <button type="button" class="btn btn-primary"><h1>Ciclo da Água:</h1></button>
+    <br>Clique nas etapas do ciclo para mais informações
+     <!-- <div class="accordion" id="accordionExample">
+            <div class="card">
+              <div class="card-header" id="headingOne">
+                <h5 class="mb-0">
+                  <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    <b>Absorção</b> Lençol Freático ⇨ Árvore 
+                  </button>
+                </h5>
+              </div>
+            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                <div class="card-body">
+                    A árvore através da capilaridade absorve a água do lençol freático.
+                   </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" id="headingTwo">
+                <h5 class="mb-0">
+                  <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    <b>Condensação </b> Vapor de Água ⇨ Nuvem 
+                    </button>
+                </h5>
+              </div>
+              <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                <div class="card-body">
+                    O vapor de água com a temperatura baixa do céu se condensa em forma de nuvens.
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" id="headingThree">
+                <h5 class="mb-0">
+                  <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    <b>Evaporação </b>  Água do Rio ⇨ Vapor de Água
+                  </button>
+                </h5>
+              </div>
+              <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                <div class="card-body">
+                    A água do rio com o calor evapora e se transforma em vapor de água.
+                  </div>
+              </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="headingFour">
+                  <h5 class="mb-0">
+                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                         <b>Infiltração </b>  Chuva ⇨ Lençol Freático 
+                    </button>
+                  </h5>
+                </div>
+                <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+                  <div class="card-body">
+                    A água da chuva penetra no solo e fica armazenada no lençol freático.
+                      </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header" id="headingFive">
+                  <h5 class="mb-0">
+                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                        <b>Movimentação </b>  Nuvem ⇨ Nuvens 
+                    </button>
+                  </h5>
+                </div>
+                <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
+                  <div class="card-body">
+                  Com o vento a nuvem se espalha em nuvens para outras regiões.
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" id="headingSix">
+                      <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseFive">
+                            <b>Precipitação </b>  Nuvem ⇨ Chuva 
+                        </button>
+                      </h5>
+                    </div>
+                    <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordionExample">
+                      <div class="card-body">
+                      A nuvem começa a precipitar, isto é chover.
+                        </div>
+                    </div>
+              </div>
+              <div class="card">
+                <div class="card-header" id="headingSeven">
+                  <h5 class="mb-0">
+                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="false" aria-controls="collapseFive">
+                        <b>Transpiração </b>  Árvore ⇨ Vapor de Água 
+                    </button>
+                  </h5>
+                </div>
+                <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven" data-parent="#accordionExample">
+                  <div class="card-body">
+                  Um tipo especial de evaporação é a transpiração da árvore, que transforma a água acumulada em vapor de água.
+                    </div>
+                </div>
+          </div>
+          </div>    -->
+          <div class="conteiner">
+            <div class="row">
+              <div class="col-1"></div>
+              <div class="col-6">
+          <div class="d-flex row bd-highlight mb-0">
+            <div class="p-0 bd-highlight"><img src="1.png" alt="1" ></div>
+            <div id="condensacao" class="p-0 bd-highlight condensacao" data-toggle="tooltip" data-placement="top" title="Condensação"><img src="2.png" alt="2" ></div>
+            <div class="p-0 bd-highlight"><img src="3.png" alt="3" ></div>
+          </div>
+          <div class="d-flex row bd-highlight mb-0">
+            <div id="evaporacao" class="p-0 bd-highlight evaporacao" data-toggle="tooltip" data-placement="top" title="Evaporação"><img src="4.png" alt="1" ></div>
+            <div id="transpiracao" class="p-0 bd-highlight transpiracao" data-toggle="tooltip" data-placement="top" title="Transpiração"><img src="5.png" alt="2" ></div>
+            <div id="preciptacao" class="p-0 bd-highlight preciptacao" data-toggle="tooltip" data-placement="top" title="Preciptação"><img src="6.png" alt="3" ></div>
+          </div>
+          <div class="d-flex row bd-highlight mb-0">
+            <div class="p-0 bd-highlight"><img src="7.png" alt="1" ></div>
+            <div id="infiltracao" class="p-0 bd-highlight infiltracao" data-toggle="tooltip" data-placement="top" title="Infiltração"><img src="8.png" alt="2" ></div>
+            <div class="p-0 bd-highlight"><img src="9.png" alt="3" ></div>
+          </div>
+        </div>
+        <div class="col-5"><div id="titulo"><h1>Fenômeno</h1></div>
+        <div id="local"><h2>Local onde ocorre</h2></div>
+                  <div id="descricao"><h3>Descrição do Fenômeno</h3>
+                  </div>
+      </div>   
+        </div>
+     referência da imagem:
+     https://www.aguasustentavel.org.br/conteudo/blog/191-ciclo-da-agua-o-que-e-e-como-ocorre
+    </body>
+</html>
